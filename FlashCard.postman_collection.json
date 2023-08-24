@@ -1,0 +1,786 @@
+{
+	"info": {
+		"_postman_id": "5d5299c3-3b1f-418e-97b4-4d97dc96762d",
+		"name": "FlashCard",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "26123292",
+		"_collection_link": "https://solar-capsule-752689.postman.co/workspace/Team-Workspace~f80bf01b-63a5-4550-8478-148a6f046bc2/collection/26123292-5d5299c3-3b1f-418e-97b4-4d97dc96762d?action=share&source=collection_link&creator=26123292"
+	},
+	"item": [
+		{
+			"name": "user",
+			"item": [
+				{
+					"name": "signup",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"username\": \"Jone\",\n  \"email\": \"Jone@don.com\",\n  \"password\": \"test\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/users/register",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"users",
+								"register"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Signup",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"username\": \"Rohan\",\n  \"email\": \"rohan@test.com\",\n  \"password\": \"test\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3000/users/register",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"users",
+										"register"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "160"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"a0-AWT4F8tpBpUI32haF9nAicthLYw\""
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 24 Aug 2023 12:56:17 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"email\": \"rohan@test.com\",\n    \"username\": \"Rohan\",\n    \"password\": \"$2b$10$SDwgcjcf8zxv.ogdhVzEx.88phiKmvgO/Zovfl5aPnsHIcR1kD.hq\",\n    \"_id\": \"64e75371fe0763f2f1dcf6cb\",\n    \"__v\": 0\n}"
+						}
+					]
+				},
+				{
+					"name": "login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"email\": \"Jone@don.com\",\n  \"password\": \"test\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/users/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"users",
+								"login"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Login",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"email\": \"rohan@test.com\",\n  \"password\": \"test\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3000/users/login",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"users",
+										"login"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "139"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"8b-f4SbspxbfTAXg87iXuy3+M+XH9o\""
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 24 Aug 2023 12:57:51 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"token\": \"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2NGU3NTM3MWZlMDc2M2YyZjFkY2Y2Y2IifQ.a_bd9ypfWVfO0n4Rjs376pjD0hHS9AtJ4eiidwYmKVM\"\n}"
+						}
+					]
+				},
+				{
+					"name": "profile",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0esssXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2NGU2ZWVjNzhhYjI2ZWZjMzgyMjAxNmUifQ.HUMpFFNZzhvl5sYHHa5oOYNCROJbfG2PtNsBv24qIfY",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/users/profile",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"users",
+								"profile"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "profile",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2NGU3NTM3MWZlMDc2M2YyZjFkY2Y2Y2IifQ.a_bd9ypfWVfO0n4Rjs376pjD0hHS9AtJ4eiidwYmKVM",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3000/users/profile",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"users",
+										"profile"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "34"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"22-U0ToXUIta4uQ0+g5IppOxJ4Nn3Y\""
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 24 Aug 2023 12:58:28 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"sub\": \"64e75371fe0763f2f1dcf6cb\"\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "flashcard",
+			"item": [
+				{
+					"name": "create flashcard",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2NGU2ZWVjNzhhYjI2ZWZjMzgyMjAxNmUifQ.HUMpFFNZzhvl5sYHHa5oOYNCROJbfG2PtNsBv24qIfY",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \n  \"title\": \"Second flash card\",\n  \"question\": \"Done\",\n  \"answer\": \"Done\",\n  \"createdBy\": \"64e60807eda4579c4e0834a1\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/flashcards",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"flashcards"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "create flashcard",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2NGU2ZWVjNzhhYjI2ZWZjMzgyMjAxNmUifQ.HUMpFFNZzhvl5sYHHa5oOYNCROJbfG2PtNsBv24qIfY",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \n  \"title\": \"Rohan flash card\",\n  \"question\": \"Done\",\n  \"answer\": \"Done\",\n  \"createdBy\": \"64e75371fe0763f2f1dcf6cb\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3000/flashcards",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"flashcards"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "103"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"67-TJF+NIg74eNcOJC8e1ws+1VMWfk\""
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 24 Aug 2023 12:59:41 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"title\": \"Rohan flash card\",\n    \"question\": \"Done\",\n    \"answer\": \"Done\",\n    \"_id\": \"64e7543dfe0763f2f1dcf6ce\",\n    \"__v\": 0\n}"
+						}
+					]
+				},
+				{
+					"name": "getAllflashcard",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2NGU2ZWVjNzhhYjI2ZWZjMzgyMjAxNmUifQ.HUMpFFNZzhvl5sYHHa5oOYNCROJbfG2PtNsBv24qIfY",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3000/flashcards",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"flashcards"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "getAllflashcard",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2NGU2ZWVjNzhhYjI2ZWZjMzgyMjAxNmUifQ.HUMpFFNZzhvl5sYHHa5oOYNCROJbfG2PtNsBv24qIfY",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "http://localhost:3000/flashcards",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"flashcards"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "418"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"1a2-yGbedsecbyAsrduQTVSa6j/cVlk\""
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 24 Aug 2023 13:00:38 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"_id\": \"64e733e02eb1ba438f063ca5\",\n        \"title\": \"Second flash card\",\n        \"question\": \"Done\",\n        \"answer\": \"Done\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"64e73574ac3ec61739c348e2\",\n        \"title\": \"First flash card\",\n        \"question\": \"Done\",\n        \"answer\": \"Done\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"64e73596ac3ec61739c348e4\",\n        \"title\": \"First flash card\",\n        \"question\": \"Done\",\n        \"answer\": \"Done\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"64e7543dfe0763f2f1dcf6ce\",\n        \"title\": \"Rohan flash card\",\n        \"question\": \"Done\",\n        \"answer\": \"Done\",\n        \"__v\": 0\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "update  flashcard",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": [
+						{
+							"name": "update flashcard",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2NGU2ZWVjNzhhYjI2ZWZjMzgyMjAxNmUifQ.HUMpFFNZzhvl5sYHHa5oOYNCROJbfG2PtNsBv24qIfY",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{  \n  \"title\": \"THird Rohan new card\",\n  \"question\": \"Done\",\n  \"answer\": \"Done\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3000/flashcards/64e73574ac3ec61739c348e2",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"flashcards",
+										"64e73574ac3ec61739c348e2"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "107"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"6b-JFNvLK19ZMStnJ4sPSiqhIU4Crs\""
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 24 Aug 2023 13:05:44 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"_id\": \"64e73574ac3ec61739c348e2\",\n    \"title\": \"THird Rohan new card\",\n    \"question\": \"Done\",\n    \"answer\": \"Done\",\n    \"__v\": 0\n}"
+						}
+					]
+				},
+				{
+					"name": "delete flash card",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": [
+						{
+							"name": "delete flash card",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2NGU2ZWVjNzhhYjI2ZWZjMzgyMjAxNmUifQ.HUMpFFNZzhvl5sYHHa5oOYNCROJbfG2PtNsBv24qIfY",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "http://localhost:3000/flashcards/64e73574ac3ec61739c348e2",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"flashcards",
+										"64e73574ac3ec61739c348e2"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "107"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"6b-JFNvLK19ZMStnJ4sPSiqhIU4Crs\""
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 24 Aug 2023 13:06:33 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"_id\": \"64e73574ac3ec61739c348e2\",\n    \"title\": \"THird Rohan new card\",\n    \"question\": \"Done\",\n    \"answer\": \"Done\",\n    \"__v\": 0\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "share-link",
+			"item": [
+				{
+					"name": "New Request",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2NGU2ZWVjNzhhYjI2ZWZjMzgyMjAxNmUifQ.HUMpFFNZzhvl5sYHHa5oOYNCROJbfG2PtNsBv24qIfY",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{ \n    \"userId\":\"64e6eec78ab26efc3822016e\",\n    \"flashcardId\":\"64e73574ac3ec61739c348e2\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/share-links/generate",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"share-links",
+								"generate"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getFlashcardWithLinkToken",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2NGU3NjBlNWZlMDc2M2YyZjFkY2Y2ZGMifQ.8zZrcwHzY6la74TglvsYLZs-QA3O6SHG1D4tD5oMn24",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3000/share-links/2ecb2ea8-87e9-4673-8599-c0950f5aeff9",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"share-links",
+								"2ecb2ea8-87e9-4673-8599-c0950f5aeff9"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "getFlashcardWithLinkToken",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2NGU3NjBlNWZlMDc2M2YyZjFkY2Y2ZGMifQ.8zZrcwHzY6la74TglvsYLZs-QA3O6SHG1D4tD5oMn24",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "http://localhost:3000/share-links/cae1e46a-c9df-47f8-9948-9688f07b96d4",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"share-links",
+										"cae1e46a-c9df-47f8-9948-9688f07b96d4"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "91"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"5b-i/9RZupDFGspr5J5/hL03tcDqBQ\""
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 24 Aug 2023 14:32:44 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"_id\": \"64e7612afe0763f2f1dcf6e1\",\n        \"title\": \"Mihir's flash card\",\n        \"question\": \"Done\",\n        \"__v\": 0\n    }\n]"
+						}
+					]
+				}
+			]
+		}
+	]
+}

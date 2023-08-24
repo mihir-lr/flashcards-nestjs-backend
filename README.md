@@ -17,6 +17,7 @@ It is a platform where user can create a question - answer flashcards.
 - Flashcard
   - User can create, get, update and delete flashcards.
   - Flashcards are sharable. Means user can share the flashcards with other users.
+  - Also added postman collection.
 
 ### Steps to run - Node App
 
